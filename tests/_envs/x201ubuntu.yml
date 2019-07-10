@@ -1,0 +1,12 @@
+modules:
+    config:
+        REST:
+            url: http://x201ubuntu/atlas
+        WebDriver:
+            url: http://x201ubuntu/atlas
+            host: x201ubuntu
+            port: 4444
+            browser: chrome
+            capabilities:
+                chromeOptions:
+                    args: ["window-size=1600x900"]

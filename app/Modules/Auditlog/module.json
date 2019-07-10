@@ -1,0 +1,7 @@
+{
+    "name": "Auditlog",
+    "slug": "auditlog",
+    "version": "1.0",
+	"author": "Yong Li",
+    "description": "This is the description for the Auditlog module."
+}

@@ -1,0 +1,49 @@
+/* font face */
+$app-font-path: '../fonts';
+$app-font-family: "nunito";
+
+$app-font-weight-light: 300;
+$app-font-weight-regular: 400;
+$app-font-weight-medium: 500;
+$app-font-weight-bold: 800;
+
+
+@font-face {
+     font-family: $app-font-family;
+     font-style: normal;
+     font-weight: $app-font-weight-light;
+     src: local("Nunito Light"),
+     local("Nunito-Light"),
+     url("#{$app-font-path}/nunito-regular-webfont.woff2") format("woff2"),
+     url("#{$app-font-path}/nunito-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+     font-family: $app-font-family;
+     font-style: normal;
+     font-weight: $app-font-weight-regular;
+     src: local("Nunito"),
+     local("Nunito-Regular"),
+     url("#{$app-font-path}/nunito-regular-webfont.woff2") format("woff2"),
+     url("#{$app-font-path}/nunito-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+     font-family: $app-font-family;
+     font-style: normal;
+     font-weight: $app-font-weight-medium;
+     src: local("Nunito Medium"),
+     local("Nunito-Medium"),
+     url("#{$app-font-path}/nunito-bold-webfont.woff2") format("woff2"),
+     url("#{$app-font-path}/nunito-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+     font-family: $app-font-family;
+     font-style: normal;
+     font-weight: $app-font-weight-bold;
+     src: local("Nunito Bold"),
+     local("Nunito-Bold"),
+     url("#{$app-font-path}/nunito-bold-webfont.woff2") format("woff2"),
+     url("#{$app-font-path}/nunito-bold-webfont.woff") format("woff");
+}

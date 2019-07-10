@@ -1,0 +1,18 @@
+{
+	"version": 1,
+	"type": "laravel",
+	"core": "",
+	"domain": "example.com",
+	"build_script": "./run_build.sh",
+	"update_script": "./run_update.sh",
+	"test_script": "./run_test.sh",
+	"test_output": "tests/_output",
+	"build_exclude": [
+		"node_modules"
+	],
+	"modules": [],
+	"path_mappings": {
+		"/": ""
+	},
+	"template": "laravel55"
+}

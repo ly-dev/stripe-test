@@ -1,0 +1,10 @@
+modules:
+    config:
+        REST:
+            url: http://sandboxphp7/atlas/public
+        WebDriver:
+            url: http://sandboxphp7/atlas/public
+            host: builderphp7
+            port: 4444
+            browser: firefox
+            window_size: 1600x900            
