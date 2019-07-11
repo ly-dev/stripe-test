@@ -18,6 +18,9 @@ $activeClientModel = (isset($userModel->moderator) &&  isset($userModel->moderat
                 <a class="nav-link" href="{{ route('login') }}">Login</a>
             </li>
             @else
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('stripe.index') }}">Stripe</a>
+            </li>
                 @if ($userModel->hasPermissionTo(\App\Models\User::PERMISSION_ADMIN))
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="admin-tasks-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
