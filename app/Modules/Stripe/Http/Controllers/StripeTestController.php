@@ -27,6 +27,17 @@ class StripeTestController extends Controller
         return view('stripe::index', []);
     }
 
+    /**
+     * Stripe elements
+     *
+     * @param Request $request
+     * @return Response content
+     */
+    public function stripeElements(Request $request)
+    {
+        return view('stripe::elements', []);
+    }
+
 
     /**
      * Stripe 3D Secure 2
@@ -37,7 +48,5 @@ class StripeTestController extends Controller
     public function stripe3DSecure2(Request $request)
     {
         return view('stripe::3d-secure-2', []);
-    }
-
-    
+    } 
 }

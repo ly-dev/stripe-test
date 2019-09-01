@@ -13,7 +13,8 @@
         "laratalks/validator": "^1.1",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
-        "spatie/laravel-permission": "^2.36"
+        "spatie/laravel-permission": "^2.36",
+        "stripe/stripe-php": "^6.40"
     },
     "require-dev": {
         "codeception/codeception": "^2.5",

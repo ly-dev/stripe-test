@@ -8,9 +8,10 @@
             <h1>Stripe Tests</h1>
             <ul>
                 @foreach ([
+                    'Elements' => route('stripe.elements'),
                     '3D Secure 2' => route('stripe.3d-secure-2'),
-                    'Apple Pay' => '#',
-                    'Google Pay' => '#',
+                    'Connect Acount' => route('stripe.connect.accouunt'),
+                    'Payment Intent' => route('stripe.payment.intent'),
                 ] as $label => $link )
                 <li><a href="{{ $link }}">{{ $label }}</a></li>
                 @endforeach
