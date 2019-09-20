@@ -19,7 +19,7 @@ class ModuleServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__ . '/../Resources/Lang', 'account');
         $this->loadViewsFrom(__DIR__ . '/../Resources/Views', 'account');
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations', 'account');
-        $this->loadConfigsFrom(__DIR__ . '/../config');
+        // $this->loadConfigsFrom(__DIR__ . '/../config');
 
         // define customized validation
         Validator::extend('current_password', function ($attribute, $value, $parameters, $validator) {

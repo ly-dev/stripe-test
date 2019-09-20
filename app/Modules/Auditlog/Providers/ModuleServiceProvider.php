@@ -16,7 +16,7 @@ class ModuleServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__.'/../Resources/Lang', 'auditlog');
         $this->loadViewsFrom(__DIR__.'/../Resources/Views', 'auditlog');
         $this->loadMigrationsFrom(__DIR__.'/../Database/Migrations', 'auditlog');
-        $this->loadConfigsFrom(__DIR__.'/../config');
+        // $this->loadConfigsFrom(__DIR__.'/../config');
     }
 
     /**

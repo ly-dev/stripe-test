@@ -17,7 +17,7 @@ class ModuleServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__ . '/../Resources/Lang', 'stripe');
         $this->loadViewsFrom(__DIR__ . '/../Resources/Views', 'stripe');
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations', 'stripe');
-        $this->loadConfigsFrom(__DIR__ . '/../config');
+        // $this->loadConfigsFrom(__DIR__ . '/../config');
 
         // binding services to service container
         $this->app->singleton(StripeService::class, function () {

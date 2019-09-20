@@ -13,6 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/stripe', function (Request $request) {
-    // return $request->stripe();
-})->middleware('auth:api');
+// Route::get('/stripe', function (Request $request) {
+//     // return $request->stripe();
+// })->middleware('auth:api');
