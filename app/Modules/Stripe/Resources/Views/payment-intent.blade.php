@@ -4,7 +4,7 @@
 <div class="container-fluid">
     <div class="row d-flex justify-content-center mt-5">
         <div class="col-sm-10">
-            <h1>Stripe - Payment Intent</h1>
+            <h1>Payment Intent</h1>
 
             <label for="cardholder-name" style="display:block">
                 Credit or debit card

@@ -23,6 +23,42 @@ class StripeController extends Controller
         $this->stripeService = $stripeService;
     }
 
+
+    /**
+     * List view
+     *
+     * @param Request $request
+     * @return Response content
+     */
+    public function index(Request $request)
+    {
+        return view('stripe::index', []);
+    }
+
+    /**
+     * Stripe elements
+     *
+     * @param Request $request
+     * @return Response content
+     */
+    public function stripeElements(Request $request)
+    {
+        return view('stripe::elements', []);
+    }
+
+
+    /**
+     * Stripe payment request button
+     *
+     * @param Request $request
+     * @return Response content
+     */
+    public function stripePaymentRequestButton(Request $request)
+    {
+        return view('stripe::payment-request-button', []);
+    }
+
+    
     /**
      * Success
      *
@@ -60,7 +96,7 @@ class StripeController extends Controller
         $url = "https://connect.stripe.com/oauth/authorize";
         $query = http_build_query([
             "response_type" => "code",
-            "client_id" => env("STRIPE_CLIENT_ID"),
+            "client_id" => config('stripe.client_id'),
             "scope" => "read_write",
             "state" => $state,
             "redirect_uri" => route("stripe.connect.callback"),

@@ -9,7 +9,7 @@
             <ul>
                 @foreach ([
                     'Elements' => route('stripe.elements'),
-                    '3D Secure 2' => route('stripe.3d-secure-2'),
+                    'Payment Request Button' => route('stripe.payment-request-button'),
                     'Connect Acount' => route('stripe.connect.accouunt'),
                     'Payment Intent' => route('stripe.payment.intent'),
                 ] as $label => $link )

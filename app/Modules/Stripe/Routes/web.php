@@ -12,17 +12,13 @@
  */
 
 Route::group(['prefix' => 'stripe'], function () {
-    Route::get('/', 'StripeTestController@index')->name('stripe.index');
+    Route::get('/', 'StripeController@index')->name('stripe.index');
 
-    Route::get('/elements', 'StripeTestController@stripeElements')->name('stripe.elements');
-    Route::get('/3d-secure-2', 'StripeTestController@stripe3DSecure2')->name('stripe.3d-secure-2');
-
-    Route::get('/success', 'StripeController@success')->name('stripe.success');
-    Route::get('/cancel', 'StripeController@cancel')->name('stripe.cancel');
-
+    Route::get('/elements', 'StripeController@stripeElements')->name('stripe.elements');
+    Route::get('/payment-request-button', 'StripeController@stripePaymentRequestButton')->name('stripe.payment-request-button');
+    
     Route::get('/connect-account', 'StripeController@connectAccount')->name('stripe.connect.accouunt');
     Route::get('/connect-callback', 'StripeController@connectCallback')->name('stripe.connect.callback');
-
     Route::get('/payment-intent', 'StripeController@paymentIntent')->name('stripe.payment.intent');
 
 });

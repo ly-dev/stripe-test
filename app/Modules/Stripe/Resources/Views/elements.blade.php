@@ -4,7 +4,7 @@
 <div class="container-fluid">
     <div class="row d-flex justify-content-center mt-5">
         <div class="col-sm-10">
-            <h1>Stripe - Elements</h1>
+            <h1>Elements</h1>
 
             <form action="/charge" method="post" id="payment-form">
                 <label for="card-element" style="display:block">
@@ -34,7 +34,7 @@
 <script type="text/javascript">
     jQuery(document).ready(function() {
         // Create a Stripe client.
-        var stripe = Stripe('{{ env("STRIPE_PUBLISHABLE_KEY") }}');
+        var stripe = Stripe('{{ config("stripe.publishable_key") }}');
 
         // Create an instance of Elements.
         var elements = stripe.elements();
